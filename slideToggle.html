@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $("#slide").slideToggle("fast");
+                $("#mydiv").slideToggle("slow");
+            })
+        });
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 2px solid yellow;
+        }
+
+        #slide {
+            background-color: blue;
+        }
+
+        #mydiv {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <p>click the below div to slide </p>
+    <div id="slide">div1</div>
+    <div id="mydiv">div2</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+            $("#bt1").click(function(){
+              alert("Font-color="+$("h2").css("color"))
+            })
+        });
+    </script>
+    <style>
+        h2{
+            background-color: blue;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>h1 tag</h1>
+<h2>h2 tag</h2>
+<p>paragraph</p>
+<button id="bt1">get CSS</button>
+</body>
+
+</html>

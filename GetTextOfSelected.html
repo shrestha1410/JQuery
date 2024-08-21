@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+            $("#bt1").click(function(){
+               alert($("#demo").text()); 
+            });
+            $("#bt2").click(function(){
+               alert($("#demo").html()); 
+            });
+        });
+    </script>
+    <style>
+        #demo {
+            background: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        button {
+            background: red;
+            color: azure;
+            font-size: 20px;
+            text-align: center;
+            padding: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo">This is <em>demo</em>.<strong>This ia another.</strong></p>
+    <button id="bt1">To get text content</button>
+    <button id="bt2">To get html content</button>
+</body>
+
+</html>

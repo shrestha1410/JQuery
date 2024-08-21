@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+            $("#bt1").click(function(){
+                var txt="";
+                txt+="height="+$(".demo").height();
+                $(".demo").html(txt);
+            })
+        });
+    </script>
+    <style>
+        .demo{
+            height: 200px;
+            width: 100px;
+            padding: 100px;
+            background-color: blue;
+            color: white;
+        }
+        button{
+            background-color: rebeccapurple;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>h1 tag</h1>
+<h3>h3 tag</h3>
+<div class="demo">
+div
+</div>
+<button id="bt1">width</button>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+            $("p").siblings().css({
+                "color": "blue",
+                "border": "2px solid red"
+            })
+        });
+    </script>
+    <style>
+        .siblings * {
+            display: block;
+            border: 2px dashed black;
+            color: orange;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="siblings"> grand parent
+        <div style="width:600px"> parent
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <p>p</p>
+            <ol>
+                <li>li</li>
+                <li>li</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>

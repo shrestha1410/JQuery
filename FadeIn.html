@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(2000);
+                $("#div4").fadeIn("fast");
+            })
+        });
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            display: none;
+            border: 2px solid yellow;
+        }
+
+        #div1 {
+            background-color: blue;
+        }
+
+        #div2 {
+            background-color: red;
+        }
+
+        #div3 {
+            background-color: green;
+        }
+
+        #div4 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <h2>hide</h2>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+    <button>content</button>
+</body>
+
+</html>

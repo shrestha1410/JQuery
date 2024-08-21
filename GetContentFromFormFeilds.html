@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+           $("#bt1").click(function(){
+            alert($("#ename").val());
+           });
+           $("#bt2").click(function(){
+           alert($("#edepart").val());
+           });
+           $("#bt3").click(function(){
+           alert($("#ezone").val());
+           });
+        });
+    </script>
+    <style>
+      
+        button {
+            background: red;
+            color: azure;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Employee Records</h1>
+    <form>
+    <p>Employee Name: <input type="text" id="ename" value="Shrestha"></p>
+    <p>Employee Department: <input type="text" id="edepart"  value="tech"></p>
+    <p>Employee Zone: <input type="text" id="ezone" value="north"></p>
+    <button id="bt1">Employee Name</button>
+    <button id="bt2">Employee Department</button>
+    <button id="bt3">Employee Zone</button>
+    </form>
+</body>
+
+</html>

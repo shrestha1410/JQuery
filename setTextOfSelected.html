@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+    <script>
+        $(document).ready(function () {
+          $("#bt1").click(function(){
+            $("p").text("this is demo text");
+          });
+          $("#bt2").click(function(){
+            $("p").html("this is <Strong>demo</strong> <em>html</em>");
+          });
+        });
+    </script>
+    <style>
+        p {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <p> set the content of the selected</p>
+    <button id="bt1">text</button>
+    <button id="bt2">html</button>
+</body>
+
+</html>
